@@ -1,7 +1,10 @@
 environment:
   MAVEN_OPTS: -XX:MaxPermSize=256m
 
+cache:
+  - 'C:\Users\%USERNAME%\.m2\repository'
+
 install:
-  - mvn install -pl \!aws-java-sdk-osgi 
+  - mvn install -pl '!aws-java-sdk-osgi '
 
 build: off
